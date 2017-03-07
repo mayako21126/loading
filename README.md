@@ -1,18 +1,17 @@
-# ygdl
-
+# Vueloading
 > mayako
 
-## Build Setup
+## Setup
 
-``` bash
-# install dependencies
-npm install
+# install 
+npm install may-vue-loading -s
 
-# serve with hot reload at localhost:8080
-npm run dev
+# Using a Plugin
+Vue.use(vueLoading)
 
-# build for production with minification
-npm run build
+# show&&hide
+- show vueLoading.show(function(){})
+- hide vueLoading.hide(function(){})
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
