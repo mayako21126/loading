@@ -11,14 +11,14 @@ var cssSourceMapProd = (env === 'production' && config.build.productionSourceMap
 var useCssSourceMap = cssSourceMapDev || cssSourceMapProd
 module.exports = {
   // 入口文件
-  entry: './src/plugins/index.js',
+  entry: './src/components/video.vue',
   // 编译输出的文件路径
   output: {
     //`dist`文件夹
     path: './dist',
     // 文件 `build.js` 即 dist/build.js
     filename: 'index.js',
-    library: 'VueLoading',
+    library: 'Com',
     libraryTarget: 'umd'
   },
   //加载器

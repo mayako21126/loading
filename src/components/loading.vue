@@ -1,8 +1,8 @@
 <template>
   <div style="height: 100vh;width: 100%;text-align: center;vertical-align: middle; top: 0px;   background-color: rgba(55, 55, 55, 0.498039);
     position: fixed;
-    z-index: 99999;" v-if="loading">
-    <img src="../assets/i/loading.gif" id="center" alt="" style="width:84px; height:84px;position:absolute;top:50%;left:50%; margin:-42px 0 0 -42px;">
+    z-index: 99999;" v-if="loading" id="mayLoading">
+    <img src="../assets/i/loading.gif" id="center" alt="" style="width:42px; height:42px;position:absolute;top:50%;left:50%; margin:-21px 0 0 -21px;">
   </div>
 </template>
 

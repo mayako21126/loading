@@ -2,15 +2,33 @@
   <div id="">
   <button @click="show()">asd</button>
     <button @click="hide()">hide</button>
+    <com :sources="video.sources" :options="video.options"></com>
   </div>
 </template>
 <script type="text/babel">
+  import com from '../dist/index'
+
   export default {
     data () {
       return {
-        num1: 10
+        num1: 10,
+        video: {
+          sources: [{
+            src: 'http://covteam.u.qiniudn.com/oceans.mp4',
+            type: 'video/mp4'
+          }],
+          options: {
+            autoplay: true,
+            volume: 0.6,
+            poster: 'http://covteam.u.qiniudn.com/poster.png'
+          }
+        }
       }
-    },methods:{
+    },
+    components:{
+      com:com
+    }
+    ,methods:{
       show:function(){
         console.log(this)
         this.vueLoading.show({
